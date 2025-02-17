@@ -1,0 +1,4 @@
+- name: "prometheus"
+  version: "29.7.0"
+  url: "https://bosh.io/d/github.com/bosh-prometheus/prometheus-boshrelease?v=29.7.0"
+  sha1: "693c389e070d8e843c13c3dd41f73e66927b1874"

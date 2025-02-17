@@ -6,4 +6,17 @@
   "kubernetes": {
     "fileMatch": ["deployments/.*\\.ya?ml$"]
   }
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["releases/.*\\.yml"],
+      "matchStrings": [
+        "release_version: (?<currentValue>.*)"
+      ],
+      "datasourceTemplate": "bosh-io",
+      "depNameTemplate": "bosh-release-name",
+      "versioningTemplate": "bosh-io"
+    }
+  ]
+}
 }
